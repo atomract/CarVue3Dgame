@@ -160,7 +160,7 @@ const createScene = (canvas) => {
 scene.registerAfterRender(function() {	
     F = engine.getFps();
     
-    if(map[" "]  && D < 20 ) {
+    if(map[" "]  && D < 16   ) {
         D += 1;		
     };
     
