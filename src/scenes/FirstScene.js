@@ -51,6 +51,7 @@ const createScene = (canvas) => {
 	camera.parent = carBody;
 	 
 	var carWheelMaterial = new StandardMaterial("wheelMat", scene);
+    
   	var carWheelTexture = new Texture("https://i.imgur.com/a/W7jZMw0.png", scene);
 	carWheelMaterial.diffuseTexture = carWheelTexture;
 	
@@ -125,8 +126,10 @@ const createScene = (canvas) => {
 	boxes.material.alpha = 0.25;
 
   const material = new StandardMaterial('box-material', scene)
-  material.diffuseColor = Color3.Blue()
-  box.material = material
+//   material.diffuseColor = Color3.White()
+  var buildText = new Texture("https://i.imgur.com/a/UAEbg0Q.png", scene);
+  material.diffuseTexture = buildText
+  boxes.material = material
 
    //  Controls
 
@@ -145,7 +148,7 @@ const createScene = (canvas) => {
     var theta = 0;
     var deltaTheta = 0;
     var D = 0; //distance translated per second
-    var R = 50; //turning radius, initial set at pivot z value
+    var R = 60; //turning radius, initial set at pivot z value
     var NR; //Next turning radius on wheel turn
     var A = 10; // axel length
     var L = 10; //distance between wheel pivots
