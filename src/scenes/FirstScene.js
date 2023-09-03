@@ -122,14 +122,12 @@ const createScene = (canvas) => {
     
     boxesSPS.addShape(box, 50, {positionFunction:set_boxes});  
     var boxes = boxesSPS.buildMesh(); 
-	boxes.material = new StandardMaterial("box-material", scene);
-	boxes.material.alpha = 0.25;
-
-  const material = new StandardMaterial('box-material', scene)
+	var boxesMaterial = new StandardMaterial("box-material", scene);
+	
 //   material.diffuseColor = Color3.White()
   var buildText = new Texture("https://i.imgur.com/a/UAEbg0Q.png", scene);
-  material.diffuseTexture = buildText
-  boxes.material = material
+  boxesMaterial.diffuseTexture = buildText
+
 
    //  Controls
 
@@ -162,7 +160,7 @@ const createScene = (canvas) => {
 scene.registerAfterRender(function() {	
     F = engine.getFps();
     
-    if(map[" "]  && D < 15 ) {
+    if(map[" "]  && D < 20 ) {
         D += 1;		
     };
     
