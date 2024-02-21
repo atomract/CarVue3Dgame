@@ -1,7 +1,7 @@
 # Car3DGame
 
 3D car game built using three.js and vue.js
-https://app.netlify.com/sites/eloquent-baklava-67441e/overview
+https://eloquent-baklava-67441e.netlify.app/
 
 ## Recommended IDE Setup
 
