@@ -1,6 +1,7 @@
 # Car3DGame
 
-This template should help get you started developing with Vue 3 in Vite.
+3D car game built using three.js and vue.js
+https://app.netlify.com/sites/eloquent-baklava-67441e/overview
 
 ## Recommended IDE Setup
 
